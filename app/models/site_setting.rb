@@ -107,7 +107,7 @@ class SiteSetting < ActiveRecord::Base
 
   setting(:allow_index_in_robots_txt, true)
 
-  setting(:send_welcome_message, true)
+  setting(:send_welcome_message, false)
 
   setting(:twitter_consumer_key, '')
   setting(:twitter_consumer_secret, '')
