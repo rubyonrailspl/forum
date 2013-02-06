@@ -383,6 +383,9 @@ GEM
     seed-fu (2.2.0)
       activerecord (~> 3.1)
       activesupport (~> 3.1)
+    shelly-dependencies (0.2.1)
+      rake
+      thin
     shoulda (3.3.2)
       shoulda-context (~> 1.0.1)
       shoulda-matchers (~> 1.4.1)
@@ -505,6 +508,7 @@ DEPENDENCIES
   sass
   sass-rails
   seed-fu
+  shelly-dependencies
   shoulda
   sidekiq
   simple_handlebars_rails!
