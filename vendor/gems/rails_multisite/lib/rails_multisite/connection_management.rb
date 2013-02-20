@@ -56,8 +56,7 @@ module RailsMultisite
     end
 
     def self.current_hostname
-      # ActiveRecord::Base.connection_pool.spec.config[:host_names].first
-      "forum.shellyapp.com"
+      ActiveRecord::Base.connection_pool.spec.config[:host_names].first
     end
 
 

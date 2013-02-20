@@ -1,13 +1,13 @@
 GIT
-  remote: git://github.com/SamSaffron/MiniProfiler
-  revision: d149f34fcdb64b312f70b1586d7ead822cef9789
+  remote: https://github.com/SamSaffron/MiniProfiler
+  revision: cfbd331b6bdcb5b6776c5d0f46d02d93105297cb
   specs:
     rack-mini-profiler (0.1.23)
       rack (>= 1.1.3)
 
 GIT
-  remote: git://github.com/emberjs/ember-rails.git
-  revision: 57bbe3202725e55a8e4eaccba83d663b26bcf024
+  remote: https://github.com/emberjs/ember-rails.git
+  revision: ee050448fad47d77c80db318ef1d86d8f50690bd
   specs:
     ember-rails (0.10.1)
       active_model_serializers
@@ -16,14 +16,14 @@ GIT
       railties (>= 3.1)
 
 GIT
-  remote: git://github.com/rails-api/active_model_serializers.git
+  remote: https://github.com/rails-api/active_model_serializers.git
   revision: 0114e492388ff84defcd1afbbb315e547849cb96
   specs:
     active_model_serializers (0.5.2)
       activemodel (>= 3.0)
 
 GIT
-  remote: git://github.com/zhangyuan/vestal_versions
+  remote: https://github.com/zhangyuan/vestal_versions
   revision: 0ea75ec4e269b5a9e609639919ade0f36381a446
   specs:
     vestal_versions (1.2.2)
@@ -103,8 +103,10 @@ GEM
       builder
     archive-tar-minitar (0.5.2)
     arel (3.0.2)
-    barber (0.3.0)
+    barber (0.4.1)
+      ember-source
       execjs
+      handlebars-source
     better_errors (0.5.0)
       coderay (>= 1.0.0)
       erubis (>= 2.6.6)
@@ -147,6 +149,8 @@ GEM
     diff-lcs (1.1.3)
     em-redis (0.3.0)
       eventmachine
+    ember-source (1.0.0.pre4.1)
+      handlebars-source (>= 1.0.0.rc2)
     erubis (2.7.0)
     eventmachine (1.0.0)
     excon (0.16.10)
@@ -191,6 +195,7 @@ GEM
       guard (>= 1.1)
       spork (>= 0.8.4)
     haml (3.1.7)
+    handlebars-source (1.0.9)
     has_ip_address (0.0.1)
     hashie (1.2.0)
     highline (1.6.15)

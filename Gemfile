@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 
-gem 'active_model_serializers', git: 'git://github.com/rails-api/active_model_serializers.git'
-gem 'ember-rails', git: 'git://github.com/emberjs/ember-rails.git' # so we get the pre version
-gem 'vestal_versions', git: 'git://github.com/zhangyuan/vestal_versions'
+gem 'active_model_serializers', git: 'https://github.com/rails-api/active_model_serializers.git'
+gem 'ember-rails', git: 'https://github.com/emberjs/ember-rails.git' # so we get the pre version
+gem 'vestal_versions', git: 'https://github.com/zhangyuan/vestal_versions'
 
 gem 'message_bus', path: 'vendor/gems/message_bus'
 gem 'rails_multisite', path: 'vendor/gems/rails_multisite'
@@ -51,7 +51,6 @@ gem 'sinatra', require: nil
 gem 'slim'  # required for sidekiq-web
 gem 'therubyracer', require: 'v8'
 gem 'thin'
-
 # Gem that enables support for plugins. It is required.
 gem 'discourse_plugin', path: 'vendor/gems/discourse_plugin'
 
@@ -104,7 +103,7 @@ end
 # IMPORTANT: mini profiler monkey patches, so it better be required last
 #  If you want to amend mini profiler to do the monkey patches in the railstie
 #  we are open to it.
-gem 'rack-mini-profiler', git: 'git://github.com/SamSaffron/MiniProfiler'
+gem 'rack-mini-profiler', git: 'https://github.com/SamSaffron/MiniProfiler'
 # gem 'stacktrace', :require => false
 
 group :production do

@@ -1,1 +1,9 @@
-rake assets:precompile
+#!/usr/bin/env ruby
+
+`rake assets:precompile`
+
+hosts = YAML.load_file("config/host_names.yml")['host_names']
+config = YAML.load_file("config/database.yml")
+config['production']['host_names'] = hosts
+
+File.open('config/database.yml', "w") { |f| f << config.to_yaml }
