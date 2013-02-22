@@ -31,6 +31,7 @@ class SiteSetting < ActiveRecord::Base
   client_setting(:flush_timings_secs, 5)
   client_setting(:supress_reply_directly_below, true)
   client_setting(:email_domains_blacklist, 'mailinator.com')
+  client_setting(:version_checks, true)
 
   # settings only available server side
   setting(:auto_track_topics_after, 300000)
@@ -54,7 +55,7 @@ class SiteSetting < ActiveRecord::Base
   setting(:imgur_api_key, '')
   setting(:imgur_endpoint, "http://api.imgur.com/2/upload.json")
   setting(:max_image_width, 690)
-  setting(:category_featured_topics, 6)
+  client_setting(:category_featured_topics, 6)
   setting(:topics_per_page, 30)
   setting(:posts_per_page, 20)
   setting(:invite_expiry_days, 14)
