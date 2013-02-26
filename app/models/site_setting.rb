@@ -104,7 +104,7 @@ class SiteSetting < ActiveRecord::Base
           "[Replace this first paragraph with a short description of your new category. Try to keep it below 200 characters.]\n\nUse this space below for a longer description, as well as to establish any rules or discussion!")
 
   # we need to think of a way to force users to enter certain settings, this is a minimal config thing
-  setting(:notification_email, 'info@discourse.org')
+  setting(:notification_email, 'info@forum.shellyapp.com')
 
   setting(:allow_index_in_robots_txt, true)
 
