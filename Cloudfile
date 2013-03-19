@@ -9,22 +9,7 @@ forum:
       size: large
       thin: 4
       sidekiq: 1
-      databases:
-        - postgresql
-        - redis
-
-# Used on shelly cloud staging
-discourse:
-  ruby_version: 1.9.3
-  environment: production
-  monitoring_email: bkzl@shellycloud.com
-  domains:
-    - discourse.apps.testing.winniecloud.net
-  servers:
-    app1:
-      size: large
-      thin: 4
-      sidekiq: 1
+      clockwork: on
       databases:
         - postgresql
         - redis
