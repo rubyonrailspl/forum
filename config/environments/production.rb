@@ -33,6 +33,7 @@ Discourse::Application.configure do
   # Send deprecation notices to registered listeners
   config.active_support.deprecation = :notify
 
+  config.static_cache_control = "public, max-age=31536000"
   # I dunno ... perhaps the built-in minifier is using closure
   #   regardless it is blowing up
   config.ember.variant = :development
